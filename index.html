@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Presentación Aesthetic</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>🎀 Generador de Presentaciones Aesthetic</h1>
+    
+    <section>
+        <label for="imageUpload">1️⃣ Sube una imagen para extraer la paleta:</label>
+        <input type="file" id="imageUpload" accept="image/*">
+    </section>
+
+    <section>
+        <h2>🎨 Paleta de colores detectada:</h2>
+        <div id="palette"></div>
+        <button id="copyColors">📋 Copiar paleta</button>
+    </section>
+
+    <section>
+        <label for="slideCount">2️⃣ ¿Cuántas diapositivas deseas?</label>
+        <input type="number" id="slideCount" value="3" min="1" max="10">
+    </section>
+
+    <section>
+        <h2>🖼️ Vista previa de presentación:</h2>
+        <div id="previewContainer"></div>
+    </section>
+
+    <section>
+        <a id="canvaLink" href="https://www.canva.com/design/DAFjLhT7D4k/share/preview?token=demo-template" target="_blank">
+            🌸 Ir a plantilla en Canva
+        </a>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.3.2/color-thief.umd.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
